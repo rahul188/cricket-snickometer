@@ -19,7 +19,7 @@ for i in range(p.get_device_count()):
 input_device_index = int(input("Enter the input device index: "))
 
 # Check if the selected device supports the required number of channels
-device_info = p.get_device_info_by_index(input_device_index)
+device_info = p.get_device_info_by_index(input _device_index)
 if device_info['maxInputChannels'] < 1:
     print(f"Selected device does not support mono audio input.")
     p.terminate()
